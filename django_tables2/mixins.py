@@ -4,9 +4,14 @@
 class UniqueTableIdMixin(object):
 
     """
-    Mixin to autogenerate unique table id
+    Mixin to autogenerate unique "id"  for <table> html element
+    and new "table_id" attribute for Table
 
-    Usage:
+    "table_id" attribute is acessible on template:
+
+    {{ table.table_id }}
+
+    Example:
 
     .. code-block:: python
 
