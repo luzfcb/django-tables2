@@ -13,11 +13,12 @@ from .rows import rows
 from .templates import templates
 from .utils import utils
 from .views import views
+from .mixins import mixin
 
 
 loader = django_attest.FancyReporter.test_loader
 everything = Tests([columns, config, core, models, rows, templates, utils,
-                    views])
+                    views, mixin])
 
 
 # -----------------------------------------------------------------------------
