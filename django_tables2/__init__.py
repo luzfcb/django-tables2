@@ -6,6 +6,7 @@ from .columns import (BooleanColumn, Column, CheckBoxColumn, DateColumn,
                       TemplateColumn, URLColumn, TimeColumn)
 from .config  import RequestConfig
 from .utils   import A, Attrs
+from .mixins  import UniqueTableIdMixin
 try:
     from .views   import SingleTableMixin, SingleTableView
 except ImportError:
