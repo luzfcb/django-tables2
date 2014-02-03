@@ -16,14 +16,14 @@ class UniqueTableIdMixin(object):
     .. code-block:: python
 
         >>> from django_tables2 import tables
-        >>> class AutoTableID(UniqueTableIdMixin, tables.Table):
+        >>> class AutoTableID(tables.UniqueTableIdMixin, tables.Table):
         ...     pass
         ... 
-        >>> class AutoTableID2(UniqueTableIdMixin, tables.Table):
+        >>> class AutoTableID2(tables.UniqueTableIdMixin, tables.Table):
         ...     class Meta:
         ...         attrs = {'any_other': 'any_value'}
         ...         
-        >>> class AutoTableID3(UniqueTableIdMixin, tables.Table):
+        >>> class AutoTableID3(tables.UniqueTableIdMixin, tables.Table):
         ...     class Meta:
         ...         attrs = {'id': 'magic', 'any_other': 'any_value'}
         ... 
